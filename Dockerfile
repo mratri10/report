@@ -12,4 +12,13 @@
 #EXPOSE 2080
 
 # Specify the command to run your Spring Boot application
-RUN java -jar target/report.jar
+FROM techiescamp/jre-17:1.0.0
+WORKDIR /app
+
+# Copy the JAR file (/app)
+COPY /target/*.jar ./report.jar
+
+# Expose the port the app runs on
+EXPOSE 8080
+
+RUN java -jar report.jar
