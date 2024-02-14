@@ -5,7 +5,7 @@ FROM khipu/openjdk17-alpine
 WORKDIR /app
 
 # Copy the Spring Boot JAR file into the container at /app
-COPY target/your-spring-boot-app.jar /app/your-spring-boot-app.jar
+COPY target/report.jar report.jar
 
 # Expose the port that your Spring Boot application runs on
 EXPOSE 8080
