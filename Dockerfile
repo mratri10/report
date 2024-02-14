@@ -9,7 +9,7 @@
 #COPY target/report.jar report.jar
 
 # Expose the port that your Spring Boot application runs on
-EXPOSE 2080
+#EXPOSE 2080
 
 # Specify the command to run your Spring Boot application
 CMD ["java", "-jar", "target/report.jar"]
