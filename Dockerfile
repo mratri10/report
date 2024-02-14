@@ -6,10 +6,10 @@
 #FROM khipu/openjdk17-alpine
 
 # Copy the Spring Boot JAR file into the container at /app
-COPY target/report.jar report.jar
+#COPY target/report.jar report.jar
 
 # Expose the port that your Spring Boot application runs on
 EXPOSE 2080
 
 # Specify the command to run your Spring Boot application
-CMD ["java", "-jar", "report.jar"]
+CMD ["java", "-jar", "target/report.jar"]
