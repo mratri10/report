@@ -12,4 +12,4 @@ COPY target/report.jar report.jar
 EXPOSE 2080
 
 # Specify the command to run your Spring Boot application
-CMD ["java", "-jar", "your-spring-boot-app.jar"]
+CMD ["java", "-jar", "report.jar"]
