@@ -13,15 +13,16 @@
 
 # Specify the command to run your Spring Boot application
 
-CMD ["java", "-jar", "report.jar"]
+#CMD ["java", "-jar", "report.jar"]
 
 FROM techiescamp/jre-17:1.0.0
 WORKDIR /app
 
 # Copy the JAR file (/app)
-COPY /target/*.jar ./report.jar
+COPY /target/*.jar ./java.jar
 
 # Expose the port the app runs on
-EXPOSE 9090
+EXPOSE 8080
 
-RUN java -jar report.jar
+# Run the jar file
+CMD ["java", "-jar", "java.jar"]
