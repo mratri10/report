@@ -12,4 +12,4 @@
 #EXPOSE 2080
 
 # Specify the command to run your Spring Boot application
-ENTRYPOINT ["java", "-jar", "target/report.jar"]
+RUN java -jar target/report.jar
