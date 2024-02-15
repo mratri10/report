@@ -1,0 +1,3 @@
+sudo docker build -t atrialfa/report:1.1.0 .
+
+sudo docker run -p 2610:80 atrialfa/report:1.1.0

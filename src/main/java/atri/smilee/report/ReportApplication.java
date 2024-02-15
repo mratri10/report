@@ -11,7 +11,7 @@ public class ReportApplication {
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(ReportApplication.class);
 		app.setDefaultProperties(Collections
-				.singletonMap("server.port", "9090"));
+				.singletonMap("server.port", "2610"));
 		app.run(args);
 
 	}
